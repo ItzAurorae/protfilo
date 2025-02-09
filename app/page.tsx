@@ -4,7 +4,6 @@ import Link from "next/link"
 import ContactForm from "./components/contact-form"
 import ProjectCard from "./components/project-card"
 import TechStack from "./components/tech-stack"
-import { Analytics } from "@vercel/analytics/react"
 
 export default function Page() {
   return (
