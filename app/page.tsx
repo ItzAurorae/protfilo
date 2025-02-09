@@ -59,7 +59,7 @@ export default function Page() {
                     <span className="sr-only">YouTube</span>
                     </Button>
                 </Link>
-                <Link href="patreon.com/ItzAurorae" target="_blank"> 
+                <Link href="https://patreon.com/ItzAurorae" target="_blank"> 
                   <Button variant="outline" size="icon">
                     <FaPatreon className="h-4 w-4" />
                     <span className="sr-only">Patreon</span>
