@@ -84,7 +84,7 @@ export default function Page() {
                 description="ItzAurorae protfilo built with TypeScript"
                 image="/ItzAuroraeBanner.png?height=400&width=600"
                 link="https://github.com/ItzAurorae/protfilo"
-                tags={["TypeScript", "Personal"]}
+                tags={["Next.js", "Personal", "Open Source"]}
               />
             </div>
           </div>
