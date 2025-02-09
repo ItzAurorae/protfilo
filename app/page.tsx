@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, Twitter } from "lucide-react"
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { FaYoutube, FaPatreon } from "react-icons/fa";
 import Link from "next/link"
 import ContactForm from "./components/contact-form"
 import ProjectCard from "./components/project-card"
@@ -46,19 +47,25 @@ export default function Page() {
                 </p>
               </div>
               <div className="space-x-4">
-                <Link href="https://github.com" target="_blank">
+                <Link href="https://github.com/ItzAurorae" target="_blank">
                   <Button variant="outline" size="icon">
                     <Github className="h-4 w-4" />
                     <span className="sr-only">GitHub</span>
                   </Button>
                 </Link>
-                <Link href="https://linkedin.com" target="_blank">
+                <Link href="https://youtube.com" target="_blank">
                   <Button variant="outline" size="icon">
-                    <Linkedin className="h-4 w-4" />
-                    <span className="sr-only">LinkedIn</span>
-                  </Button>
+                    <FaYoutube className="h-4 w-4" />
+                    <span className="sr-only">YouTube</span>
+                    </Button>
                 </Link>
-                <Link href="https://twitter.com" target="_blank">
+                <Link href="https://patreon.com/yourpatreon" target="_blank"> 
+                  <Button variant="outline" size="icon">
+                    <FaPatreon className="h-4 w-4" />
+                    <span className="sr-only">Patreon</span>
+                    </Button>
+                </Link>
+                <Link href="https://x.com/ItzAurorae" target="_blank">
                   <Button variant="outline" size="icon">
                     <Twitter className="h-4 w-4" />
                     <span className="sr-only">Twitter</span>
