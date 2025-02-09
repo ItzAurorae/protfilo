@@ -71,7 +71,7 @@ export default function Page() {
                     <span className="sr-only">Twitter</span>
                   </Button>
                 </Link>
-                <Link href="mailto:ItzAurorae@gmail.com">
+                <Link href="mailto:itzaurorae@zohomail.com">
                   <Button variant="outline" size="icon">
                     <Mail className="h-4 w-4" />
                     <span className="sr-only">Email</span>
