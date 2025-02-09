@@ -7,15 +7,15 @@ const technologies = [
   },
   {
     category: "Backend",
-    skills: ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB"],
+    skills: ["Node.js", "Express", "Python"],
   },
   {
     category: "DevOps",
-    skills: ["Docker", "AWS", "CI/CD", "Git", "Linux", "Nginx"],
+    skills: ["CI/CD", "Git", "Linux"],
   },
   {
     category: "Tools",
-    skills: ["VS Code", "Postman", "Figma", "Jest", "GitHub", "Vercel"],
+    skills: ["VS Code", "GitHub", "GitLab", "Vercel"],
   },
 ]
 

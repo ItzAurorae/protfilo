@@ -8,8 +8,11 @@ import type React from "react" // Import React
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "ItzAurorae Protfilo",
-  description: "ItzAurorae Protfilo",
+  title: "ItzAurorae Portfolio",
+  description: "ItzAurorae Portfolio",
+  icons: {
+    icon: "/ItzAurorae.png", // Path to your favicon (place the file in the public directory)
+  },
 }
 
 export default function RootLayout({
@@ -19,6 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* This will load the favicon */}
+        <link rel="icon" href="/ItzAurorae.png" />
+      </head>
       <body className={cn("min-h-screen bg-background font-sans antialiased", inter.className)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
@@ -27,4 +34,3 @@ export default function RootLayout({
     </html>
   )
 }
-
