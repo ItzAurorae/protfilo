@@ -53,13 +53,13 @@ export default function Page() {
                     <span className="sr-only">GitHub</span>
                   </Button>
                 </Link>
-                <Link href="https://youtube.com" target="_blank">
+                <Link href="https://www.youtube.com/@ItzAurorae" target="_blank">
                   <Button variant="outline" size="icon">
                     <FaYoutube className="h-4 w-4" />
                     <span className="sr-only">YouTube</span>
                     </Button>
                 </Link>
-                <Link href="https://patreon.com/yourpatreon" target="_blank"> 
+                <Link href="patreon.com/ItzAurorae" target="_blank"> 
                   <Button variant="outline" size="icon">
                     <FaPatreon className="h-4 w-4" />
                     <span className="sr-only">Patreon</span>
