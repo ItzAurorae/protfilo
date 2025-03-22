@@ -24,7 +24,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* This will load the favicon */}
         <link rel="icon" href="public/ItzAurorae.png" />
       </head>
       <body className={cn("min-h-screen bg-background font-sans antialiased", inter.className)}>
