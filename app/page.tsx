@@ -24,7 +24,7 @@ export default function Page() {
               <Link href="#projects" className="transition-colors hover:text-foreground/80">
                 Projects
               </Link>
-              <Link href="#resume" className="transition-colors hover:text-foreground/80">
+              <Link href="/ItzAurorae Resume.pdf" className="transition-colors hover:text-foreground/80">
                 Resume
               </Link>
               <Link href="#contact" className="transition-colors hover:text-foreground/80">
