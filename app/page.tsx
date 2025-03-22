@@ -1,3 +1,4 @@
+// page.tsx
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { FaYoutube, FaPatreon } from "react-icons/fa";
@@ -5,6 +6,7 @@ import Link from "next/link"
 import ContactForm from "./components/contact-form"
 import ProjectCard from "./components/project-card"
 import TechStack from "./components/tech-stack"
+import Resume from "./components/resume" // Import the Resume component
 
 export default function Page() {
   return (
@@ -21,6 +23,9 @@ export default function Page() {
               </Link>
               <Link href="#projects" className="transition-colors hover:text-foreground/80">
                 Projects
+              </Link>
+              <Link href="#resume" className="transition-colors hover:text-foreground/80">
+                Resume
               </Link>
               <Link href="#contact" className="transition-colors hover:text-foreground/80">
                 Contact
@@ -56,13 +61,13 @@ export default function Page() {
                   <Button variant="outline" size="icon">
                     <FaYoutube className="h-4 w-4" />
                     <span className="sr-only">YouTube</span>
-                    </Button>
+                  </Button>
                 </Link>
                 <Link href="https://patreon.com/ItzAurorae" target="_blank"> 
                   <Button variant="outline" size="icon">
                     <FaPatreon className="h-4 w-4" />
                     <span className="sr-only">Patreon</span>
-                    </Button>
+                  </Button>
                 </Link>
                 <Link href="https://x.com/ItzAurorae" target="_blank">
                   <Button variant="outline" size="icon">
@@ -81,13 +86,16 @@ export default function Page() {
           </div>
         </section>
 
+        {/* Add the Resume component here */}
+        <Resume />  {/* This will display your resume section */}
+
         <section id="projects" className="py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projects</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
-                title="ItzAurorae Protfilo"
-                description="ItzAurorae protfilo built with TypeScript"
+                title="ItzAurorae Portfolio"
+                description="ItzAurorae portfolio built with TypeScript"
                 image="/ItzAuroraeBanner.png?height=400&width=600"
                 link="https://github.com/ItzAurorae/protfilo"
                 tags={["Next.js", "Personal", "Open Source"]}
@@ -126,18 +134,17 @@ export default function Page() {
 
       <footer className="border-t">
         <div className="container flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6">
-          <p className="text-xs text-gray-500 dark:text-gray-400">©Copyright 2025 ItzAurorae Protfilo. All rights reserved.</p>
+          <p className="text-xs text-gray-500 dark:text-gray-400">©Copyright 2025 ItzAurorae Portfolio. All rights reserved.</p>
           <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-            <Link className="text-xs hover:underline underline-offset-4" href="#">
+{/*             <Link className="text-xs hover:underline underline-offset-4" href="#">
               Terms of Service
             </Link>
             <Link className="text-xs hover:underline underline-offset-4" href="#">
               Privacy
-            </Link>
+            </Link> */}
           </nav>
         </div>
       </footer>
     </div>
   )
 }
-
