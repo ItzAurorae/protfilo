@@ -38,7 +38,7 @@ const Resume = () => {
             </ul>
           </div>
           <div className="flex justify-center">
-            <Link href="/ItzAurorae-Resume.pdf" download>
+            <Link href="public/ItzAurorae Resume.pdf" download>
               <Button variant="outline">Download Resume</Button>
             </Link>
           </div>
