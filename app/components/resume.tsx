@@ -11,9 +11,9 @@ const Resume = () => {
           <div>
             <h3 className="text-xl font-semibold">Experience</h3>
             <ul className="list-disc pl-5">
-              <li>Discord Bot Developer(2020-2025)</li>
-              <li>HyperText Markup Language (HTML) Developer(2021-2025)</li>
-              <li>React Developer(2024-2025)</li>
+              <li>Discord Bot Developer (2020-2025)</li>
+              <li>HyperText Markup Language (HTML) Developer (2021-2025)</li>
+              <li>React Developer (2024-2025)</li>
             </ul>
           </div>
           <div>
@@ -38,7 +38,7 @@ const Resume = () => {
             </ul>
           </div>
           <div className="flex justify-center">
-            <Link href="public/ItzAurorae Resume.pdf" download>
+            <Link href="/ItzAurorae Resume.pdf" download>
               <Button variant="outline">Download Resume</Button>
             </Link>
           </div>
