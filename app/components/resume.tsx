@@ -11,31 +11,30 @@ const Resume = () => {
           <div>
             <h3 className="text-xl font-semibold">Experience</h3>
             <ul className="list-disc pl-5">
-              <li>Software Developer at XYZ Company (2023-Present)</li>
-              <li>Front-end Developer at ABC Corp. (2021-2023)</li>
-              <li>Intern at Some Startup (2020-2021)</li>
+              <li>Discord Bot Developer(2020-2025)</li>
+              <li>HyperText Markup Language (HTML) Developer(2021-2025)</li>
+              <li>React Developer(2024-2025)</li>
             </ul>
           </div>
           <div>
             <h3 className="text-xl font-semibold">Skills</h3>
             <ul className="list-disc pl-5">
-              <li>React, Next.js, TypeScript, Tailwind CSS</li>
+              <li>React, Next.js, TypeScript, Tailwind CSS, Python, Java</li>
               <li>Node.js, Express</li>
-              <li>Git, GitHub, Docker</li>
-              <li>Agile, Scrum</li>
+              <li>Git, GitHub</li>
             </ul>
           </div>
           <div>
             <h3 className="text-xl font-semibold">Education</h3>
             <ul className="list-disc pl-5">
-              <li>Bachelor's in Computer Science from Some University (2016-2020)</li>
+              <li>W3Schools HTML Course</li>
+              <li>freeCodeCamp HTML Course</li>
             </ul>
           </div>
           <div>
             <h3 className="text-xl font-semibold">Certifications</h3>
             <ul className="list-disc pl-5">
-              <li>Certified React Developer</li>
-              <li>Certified AWS Developer</li>
+              <li>None</li>
             </ul>
           </div>
           <div className="flex justify-center">
