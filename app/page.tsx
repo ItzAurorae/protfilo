@@ -107,6 +107,13 @@ export default function Page() {
                 link="https://github.com/ItzAurorae/metadata-extractor"
                 tags={["MIT License", "Metadata", "Open Source", "Software"]}
               />
+              <ProjectCard
+                title="Connect 4"
+                description="PLay connect 4 with Ai or a friend!"
+                image="/connet4.pngheight=400&width=600"
+                link="https://github.com/ItzAurorae/connect-4"
+                tags={["MIT License", "Open Source", "Games"]}
+              />
             </div>
           </div>
         </section>
