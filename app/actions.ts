@@ -1,54 +1,37 @@
-import fetch from "node-fetch";
+"use server"
 
-// Replace with your actual API key
-const RESEND_API_KEY = "re_H5qVpMn1_4E96ERasuPRsyhCuBunmSmDC";
-const recipientEmail = "itzaurorae@zohomail.com";
-
-// Function to send an email
-export async function submitContactForm(formData) {
-  const name = formData.get("name");
-  const email = formData.get("email");
-  const message = formData.get("message");
+export async function submitContactForm(formData: FormData) {
+  const name = formData.get("name") as string
+  const email = formData.get("email") as string
+  const message = formData.get("message") as string
 
   if (!name || !email || !message) {
-    return { message: "All fields are required." };
-  }
-
-  // Validate email format
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    return { message: "Invalid email address." };
-  }
-
-  if (!RESEND_API_KEY) {
-    console.error("❌ RESEND_API_KEY is missing. Email not sent.");
-    return { message: "Email service is not configured properly." };
+    return { message: "All fields are required." }
   }
 
   try {
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${RESEND_API_KEY}`,
+        "Authorization": `Bearer ${process.env.RESEND_API_KEY}`, // Ensure this is set in .env file
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: `${name} <${email}>`, // Uses user's email as sender
-        to: recipientEmail,
+        from: email, // Uses the sender's email
+        to: "itzaurorae@zohomail.com",
         subject: "New Contact Form Submission",
         text: `From: ${name} <${email}>\n\nMessage:\n${message}`,
       }),
-    });
+    })
 
     if (!response.ok) {
-      const errorText = await response.text();
-      throw new Error(`Failed to send email: ${errorText}`);
+      console.error("Email failed:", await response.text())
+      throw new Error("Failed to send email")
     }
 
-    console.log(`✅ Email sent successfully from ${email} to ${recipientEmail}`);
-    return { message: "Your message has been sent successfully!" };
+    return { message: "Your message has been sent successfully!" }
   } catch (error) {
-    console.error("❌ Email sending failed:", error);
-    return { message: "Failed to send message. Please try again later." };
+    console.error("Email error:", error)
+    return { message: "Failed to send message. Please try again later." }
   }
 }
