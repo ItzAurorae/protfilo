@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "ItzAurorae Portfolio",
   description: "ItzAurorae Portfolio",
   icons: {
-    icon: "public/ItzAurorae.png", // Path to your favicon (place the file in the public directory)
+    icon: "./ItzAurorae.png",
   },
 }
 
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="public/ItzAurorae.png" />
+        <link rel="icon" href="./ItzAurorae.png" />
       </head>
       <body className={cn("min-h-screen bg-background font-sans antialiased", inter.className)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
