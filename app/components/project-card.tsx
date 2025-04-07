@@ -1,5 +1,5 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Github } from "lucide-react";
+import { Github, Link as ExternalLink } from "lucide-react"; // Ensure you import the ExternalLink icon
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,12 +7,12 @@ interface ProjectCardProps {
   title: string;
   description: string;
   image: string;
-  repository: string;
-  website: string;
+  repository: string;  // Changed from 'link' to 'repository' to reflect your prop name
+  website: string;     // Assuming website prop now correctly used
   tags: string[];
 }
 
-export default function ProjectCard({ title, description, image, link, tags }: ProjectCardProps) {
+export default function ProjectCard({ title, description, image, repository, website, tags }: ProjectCardProps) { // Correct prop destructuring
   return (
     <Card className="overflow-hidden">
       <div className="relative aspect-video">
@@ -42,8 +42,12 @@ export default function ProjectCard({ title, description, image, link, tags }: P
           <Github className="h-4 w-4" />
           View on GitHub
         </Link>
-        <Link href={website} target="_blank" className="inline-flex items-center gap-2 text-sm hover:underline">
-          <ExternalLink className="h-4 w-4 mr-2"
+        <Link 
+          href={website} 
+          target="_blank" 
+          className="inline-flex items-center gap-2 text-sm hover:underline"
+        >
+          <ExternalLink className="h-4 w-4 mr-2" /> {/* Correctly placed external link icon */}
           Website Link
         </Link>
       </CardFooter>
