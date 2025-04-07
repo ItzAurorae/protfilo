@@ -43,6 +43,7 @@ export default function ProjectCard({ title, description, image, link, tags }: P
           View on GitHub
         </Link>
         <Link href={website} target="_blank" className="inline-flex items-center gap-2 text-sm hover:underline">
+          <ExternalLink className="h-4 w-4 mr-2"
           Website Link
         </Link>
       </CardFooter>
