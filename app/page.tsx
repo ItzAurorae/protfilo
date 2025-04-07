@@ -1,6 +1,6 @@
 // page.tsx
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, ExternalLink, Linkedin, Mail, Twitter } from "lucide-react";
 import { FaYoutube, FaPatreon } from "react-icons/fa";
 import Link from "next/link"
 import ContactForm from "./components/contact-form"
@@ -97,21 +97,23 @@ export default function Page() {
                 title="ItzAurorae Portfolio"
                 description="ItzAurorae portfolio built with TypeScript"
                 image="/ItzAuroraeBanner.png?height=400&width=600"
-                link="https://github.com/ItzAurorae/protfilo"
+                repository="https://github.com/ItzAurorae/protfilo"
+                website="https://itzauroraeprotfilo.vercel.app/"
                 tags={["Next.js", "Personal", "Open Source"]}
               />
               <ProjectCard
                 title="Metadata Extractor"
                 description="View a picture file metadata."
                 image="/code.png?height=400&width=600"
-                link="https://github.com/ItzAurorae/metadata-extractor"
+                repository="https://github.com/ItzAurorae/metadata-extractor"
                 tags={["MIT License", "Metadata", "Open Source", "Software"]}
               />
               <ProjectCard
                 title="Connect 4"
                 description="PLay connect 4 with Ai or a friend!"
                 image="/connet4.pngheight=400&width=600"
-                link="https://github.com/ItzAurorae/connect-4"
+                repository="https://github.com/ItzAurorae/connect-4"
+                website="https://itzaurorae.github.io/connect-4/"
                 tags={["MIT License", "Open Source", "Games"]}
               />
             </div>
