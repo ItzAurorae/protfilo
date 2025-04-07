@@ -7,12 +7,12 @@ interface ProjectCardProps {
   title: string;
   description: string;
   image: string;
-  repository: string;  // Changed from 'link' to 'repository' to reflect your prop name
-  website: string;     // Assuming website prop now correctly used
+  repository: string;
+  website?: string;
   tags: string[];
 }
 
-export default function ProjectCard({ title, description, image, repository, website, tags }: ProjectCardProps) { // Correct prop destructuring
+export default function ProjectCard({ title, description, image, repository, website, tags }: ProjectCardProps) {
   return (
     <Card className="overflow-hidden">
       <div className="relative aspect-video">
@@ -42,14 +42,10 @@ export default function ProjectCard({ title, description, image, repository, web
           <Github className="h-4 w-4" />
           View on GitHub
         </Link>
-        <Link 
-          href={website} 
-          target="_blank" 
-          className="inline-flex items-center gap-2 text-sm hover:underline"
-        >
-          <ExternalLink className="h-4 w-4 mr-2" /> {/* Correctly placed external link icon */}
-          Website Link
-        </Link>
+        <Link href={website} target="_blank" className="inline-flex items-center gap-2 text-sm hover:underline">
+          <ExternalLink className="h-4 w-4 mr-2" />
+        Website Link
+      </Link>
       </CardFooter>
     </Card>
   );
