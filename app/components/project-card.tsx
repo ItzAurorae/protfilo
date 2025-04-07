@@ -7,7 +7,8 @@ interface ProjectCardProps {
   title: string;
   description: string;
   image: string;
-  link: string; // Link to the project website
+  repository: string;
+  website: string;
   tags: string[];
 }
 
@@ -37,11 +38,11 @@ export default function ProjectCard({ title, description, image, link, tags }: P
         </div>
       </CardContent>
       <CardFooter className="p-4 pt-0 flex flex-col gap-2">
-        <Link href={link} target="_blank" className="inline-flex items-center gap-2 text-sm hover:underline">
+        <Link href={repository} target="_blank" className="inline-flex items-center gap-2 text-sm hover:underline">
           <Github className="h-4 w-4" />
           View on GitHub
         </Link>
-        <Link href={link} target="_blank" className="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded-md shadow hover:bg-blue-700 transition">
+        <Link href={website} target="_blank" className="inline-flex items-center gap-2 text-sm hover:underline">
           Website Link
         </Link>
       </CardFooter>
