@@ -10,11 +10,6 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-  
-  /* Custom centering utility class */
-  .flex-center {
-    @apply flex items-center justify-center h-screen;
-  }
 }
 
 @layer base {
@@ -98,9 +93,4 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-}
-
-/* Additional styling to demonstrate centering */
-.centered-container {
-  @apply flex-center bg-gray-100; /* Change bg-gray-100 to your preference */
 }
