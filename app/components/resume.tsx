@@ -15,6 +15,8 @@ const Resume = () => {
               <li>HyperText Markup Language (HTML) Developer (2021-2025)</li>
               <li>React Developer (2024-2025)</li>
               <li>Professional Discord Maker (2024-2025)</li>
+              <li>Python (2022-2025)</li>
+              <li>Java (2024-2025)</li>
             </ul>
           </div>
           <div>
