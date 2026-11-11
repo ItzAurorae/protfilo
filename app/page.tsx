@@ -20,11 +20,11 @@ const projects = [
     tags: ["Next.js", "Personal", "Open Source"],
   },
   {
-    title: "Metadata Extractor",
-    description: "A tool to view and extract metadata from image files quickly and easily.",
+    title: "Metadata Remover",
+    description: "Remove metadata from all types of files — built with Python and Docker.",
     image: "/code.png?height=400&width=600",
-    repository: "https://github.com/ItzAurorae/metadata-extractor",
-    tags: ["MIT License", "Metadata", "Open Source", "Software"],
+    repository: "https://github.com/ItzAurorae/metadata-remover",
+    tags: ["MIT License", "Metadata", "Open Source", "Python"],
   },
   {
     title: "Connect 4",
