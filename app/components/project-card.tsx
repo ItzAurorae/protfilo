@@ -46,7 +46,7 @@ export default function ProjectCard({ title, description, image, repository, web
         {website && (
           <Link href={website} target="_blank" className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             <ExternalLink className="h-4 w-4" />
-            Live Demo
+            Website
           </Link>
         )}
       </CardFooter>
