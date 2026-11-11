@@ -24,6 +24,7 @@ const projects = [
     description: "Remove metadata from all types of files — built with Python and Docker.",
     image: "/code.png?height=400&width=600",
     repository: "https://github.com/ItzAurorae/metadata-remover",
+    website: "https://metadata-remover-oxrv.onrender.com/",
     tags: ["MIT License", "Metadata", "Open Source", "Python"],
   },
   {
